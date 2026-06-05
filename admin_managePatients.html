@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Patients</title>
+  <link rel="stylesheet" href="admin_managePatients.css">
+</head>
+<body>
+
+<nav>
+  <h2>Admin Panel - Manage Patients</h2>
+  <ul>
+    <li><a href="admin_dashboard.html">Dashboard</a></li>
+    <li><a href="admin_manageAppointment.html">Manage Appointments</a></li>
+    <li><a href="admin_manageDoctors.html">Manage Doctors</a></li>
+    <li><a href="admin_viewReports.html">View Reports</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Patient Management</h1>
+
+  <form action="AdminManagePatientsServlet" method="POST">
+    <label for="name">Patient Name:</label>
+    <input type="text" name="name" required>
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" required>
+
+    <label for="contact">Contact:</label>
+    <input type="text" name="contact" required>
+
+    <button type="submit">Save Patient</button>
+  </form>
+
+  <h2>Patient Records</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Contact</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Patient details will be dynamically inserted here by Servlet -->
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

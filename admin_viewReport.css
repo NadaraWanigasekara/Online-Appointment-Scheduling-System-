@@ -1,0 +1,152 @@
+/* General Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #232b3e);
+    color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px; /* Reduced top padding */
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(45, 45, 68, 0.9);
+    padding: 10px; /* Reduced overall nav padding */
+    text-align: center;
+    border-bottom: 2px solid #61dafb;
+    width: 100%;
+}
+
+nav h2 {
+    color: #61dafb;
+    font-size: 1.3em; /* Slightly smaller title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduced gap between nav items */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 8px 12px; /* Reduced padding for nav links */
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+    font-size: 0.9em; /* Slightly smaller nav link text */
+}
+
+nav ul li a:hover {
+    background: #61dafb;
+    color: #1e1e2f;
+}
+
+/* Container */
+.container {
+    max-width: 750px; /* Slightly reduced max-width */
+    background: rgba(44, 44, 62, 0.95);
+    padding: 25px; /* Reduced container padding */
+    border-radius: 10px; /* Slightly reduced border-radius */
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.3); /* Slightly reduced shadow */
+    text-align: center;
+    margin-top: 20px; /* Reduced top margin */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap between form elements */
+    background: rgba(50, 50, 70, 0.9);
+    padding: 15px; /* Reduced form padding */
+    border-radius: 8px; /* Slightly reduced border-radius */
+    box-shadow: 0px 3px 12px rgba(0, 200, 255, 0.3); /* Slightly reduced shadow */
+}
+
+label {
+    font-weight: bold;
+    color: #61dafb;
+    text-align: left;
+    display: block;
+    margin-bottom: 3px; /* Reduced label margin */
+    font-size: 0.95em; /* Slightly smaller label text */
+}
+
+input, select, textarea {
+    padding: 10px; /* Reduced input padding */
+    font-size: 14px; /* Reduced input font size */
+    border: 1.5px solid #61dafb; /* Slightly thinner border */
+    border-radius: 4px; /* Reduced border-radius */
+    background: #1e2a38;
+    color: #f0f0f0;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    font-size: 14px; /* Ensure consistent textarea font size */
+}
+
+/* Button Styling */
+button {
+    padding: 10px; /* Reduced button padding */
+    background-color: #61dafb;
+    color: #1e1e2f;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px; /* Reduced border-radius */
+    font-size: 16px; /* Reduced button font size */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0098d1;
+    transform: scale(1.03); /* Slightly less scaling on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px; /* Reduced table margin */
+    background: rgba(30, 30, 50, 0.95);
+    border-radius: 8px; /* Reduced border-radius */
+    overflow: hidden;
+    box-shadow: 0px 3px 8px rgba(0, 200, 255, 0.3); /* Reduced shadow */
+}
+
+th, td {
+    padding: 10px 12px; /* Reduced cell padding */
+    text-align: center;
+    border-bottom: 1px solid #444;
+    color: #eee;
+    font-size: 0.9em; /* Reduced cell font size */
+}
+
+th {
+    background: #2c2c44;
+    color: #61dafb;
+    font-size: 14px; /* Reduced header font size */
+    text-transform: uppercase;
+}
+
+td {
+    background: rgba(50, 50, 70, 0.9);
+    font-size: 13px; /* Reduced data font size */
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+    background: rgba(0, 200, 255, 0.08); /* Slightly less intense hover */
+    transition: background 0.3s ease-in-out;
+}

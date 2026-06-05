@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Reports</title>
+  <link rel="stylesheet" href="admin_viewReport.css">
+</head>
+<body>
+
+<nav>
+  <h2>Admin Panel - View Reports</h2>
+  <ul>
+    <li><a href="admin_dashboard.html">Dashboard</a></li>
+    <li><a href="admin_manageAppointment.html">Manage Appointments</a></li>
+    <li><a href="admin_manageDoctors.html">Manage Doctors</a></li>
+    <li><a href="admin_managePatients.html">Manage Patients</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Submit Patient Clinic Report</h1>
+
+  <form action="AdminViewReportsServlet" method="POST">
+    <label for="patientName">Patient Name:</label>
+    <input type="text" name="patientName" required>
+
+    <label for="clinicDate">Clinic Date:</label>
+    <input type="date" name="clinicDate" required>
+
+    <label for="clinicDetails">Clinic Details:</label>
+    <textarea name="clinicDetails" rows="5" required></textarea>
+
+    <label for="assignedStaff">Assigned Staff:</label>
+    <input type="text" name="assignedStaff" required>
+
+    <label for="status">Status:</label>
+    <select name="status">
+      <option value="Completed">Completed</option>
+      <option value="Pending">Pending</option>
+      <option value="Cancelled">Cancelled</option>
+    </select>
+
+    <button type="submit">Save Report</button>
+  </form>
+</div>
+
+</body>
+</html>

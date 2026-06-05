@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical History - SSK Medical</title>
+    <link rel="stylesheet" href="patient_medical_history.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-title">SSK Medical</div>
+    <div class="nav-links">
+        <a href="patient_dashboard.html">Dashboard</a>
+        <a href="patient_booking.html">Booking</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h1>Patient Medical History</h1>
+
+    <form action="PatientMedicalHistoryServlet" method="POST">
+        <label for="name">Patient Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="date">Visit Date:</label>
+        <input type="date" name="date" required>
+
+        <label for="diagnosis">Diagnosis:</label>
+        <input type="text" name="diagnosis" required>
+
+        <label for="prescription">Prescription:</label>
+        <textarea name="prescription" rows="4" required></textarea>
+
+        <label for="doctor">Doctor Name:</label>
+        <input type="text" name="doctor" required>
+
+        <button type="submit">Save Record</button>
+    </form>
+
+    <h2>Medical History Records</h2>
+    <iframe src="PatientMedicalHistoryServlet" width="100%" height="400px" style="border:none;"></iframe>
+</div>
+
+</body>
+</html>
